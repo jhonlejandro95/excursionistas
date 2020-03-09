@@ -1,0 +1,28 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#formulario{
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    float:left;
+}
+#tabla{
+    margin: auto;
+    margin-top: 10px;
+    width: 50%; 
+    float: right ;
+}
+.container{
+    margin: auto;
+    margin-top: 10px;
+    height: 600px;  
+}
+ #tabus{
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    float:center; 
+}
