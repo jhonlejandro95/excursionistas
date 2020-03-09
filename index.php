@@ -56,22 +56,17 @@ $usuario=0;
             </div>
             <button  name="buscar" type="sumbit" id="buscar" class="btn btn-primary">Buscar</button>
         </form>
-      
     </div>
     <?php 
-
     $tpeso=0;
     $tcal=0;  
-
     if($usuario!=0){
-
         include("conexion.php");
             $query="SELECT * FROM elementos WHERE usuario=$usuario";
             $resultado=$conex->query($query);
             while ($row=$resultado->fetch()){
             $tpeso=$tpeso+$row['peso'];
             $tcal=$tcal+$contcal=$row['calorias'];
-            
         }
     }
     if ($tcal<15) {
@@ -133,11 +128,9 @@ $usuario=0;
             while ($row=$resultado->fetch()){
                 $tpeso=$tpeso+$row['peso'];
                 $tcal=$tcal+$contcal=$row['calorias'];
-            
             }
         }
       }
-
        ?>
     <div id="tabla">
         <table class="table">
@@ -170,7 +163,7 @@ $usuario=0;
                  $usuario= $row['idusuarios'] ; 
                 }
             }
-            }
+           }
             $query="SELECT * FROM elementos e JOIN usuarios u ON e.usuario=u.idusuarios WHERE idusuarios='$usuario'";
             $resultado=$conex->query($query);
             while ($row=$resultado->fetch()){  
@@ -226,7 +219,6 @@ $usuario=0;
             ";
             $cont=$cont+$cont;
         } 
-    
         ?>
         </tbody>
         </table>
